@@ -1,23 +1,23 @@
-#Usage
+# Usage
 
 ./dorfctl.py [enable|disable|toggle|do] <device>
 
 # Use 'do' for shutdown and unshutdown
 
 
-#Examples
-#enable something
+# Examples
+# enable something
 
 ./dorfctl.py enable regal1
 
 ./dorfctl.py enable tische
 
-#shutdown
+# shutdown
 ./dorfctl.py do shutdown
 ./dorfctl.py do unshutdown
 
-#Use presets
+# Use presets
 ./dorfctl.py Lounge hell
 
-#TODO
-list of all devices 
+# TODO
+list of all devices
