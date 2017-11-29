@@ -1,6 +1,6 @@
 # Usage
 
-./dorfctl.py [enable|disable|toggle|do] <device>
+`./dorfctl.py [enable|disable|toggle|do] <device>`
 
 # Use 'do' for shutdown and unshutdown
 
