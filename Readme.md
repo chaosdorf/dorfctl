@@ -8,16 +8,16 @@
 # Examples
 # enable something
 
-./dorfctl.py enable regal1
+`./dorfctl.py enable regal1`
 
-./dorfctl.py enable tische
+`./dorfctl.py enable tische`
 
 # shutdown
-./dorfctl.py do shutdown
-./dorfctl.py do unshutdown
+`./dorfctl.py do shutdown`
+`./dorfctl.py do unshutdown`
 
 # Use presets
-./dorfctl.py Lounge hell
+`./dorfctl.py Lounge hell`
 
 # TODO
-list of all devices
+`list of all devices`
