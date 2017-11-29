@@ -20,4 +20,4 @@ Use presets
 `./dorfctl.py Lounge hell`
 
 # TODO
-`list of all devices`
+list of all devices
