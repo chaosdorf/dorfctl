@@ -6,13 +6,13 @@ Use 'do' for shutdown and unshutdown
 
 
 # Examples
-enable something
+Enable something
 
 `./dorfctl.py enable regal1`
 
 `./dorfctl.py enable tische`
 
-shutdown
+Shutdown
 `./dorfctl.py do shutdown`
 `./dorfctl.py do unshutdown`
 
