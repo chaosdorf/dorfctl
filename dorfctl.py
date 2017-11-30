@@ -51,7 +51,6 @@ trans_dict = {
     "tische": "tischerechts",
     "usb_charger": "ubercharger",
 
-
 }
 action = "preset"
 foo = "preset"
@@ -70,11 +69,11 @@ if (status in status_dict):
 else:
     name = ' '.join(sys.argv[1:])
 
-
 #print(trans_dict[user_input])
 json_dict = {
     "action": action,
 }
+
 json_dict[foo] = name
 #print(json_dict)
 r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
