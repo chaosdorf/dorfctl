@@ -1,4 +1,3 @@
-# This is our CLI for Dorfmap
 #!/usr/bin/env pathon3
 
 import requests
