@@ -17,7 +17,7 @@ status_dict = {
 
 trans_dict = {
     "shutdown": "shortcut:shutdown",
-    "unshutdown": "shortcut:unshutdown",
+    "wakeup": "shortcut:unshutdown",
     "amps": "shortcut:amps",
     "hackcenter": "hackcenter_w",
     "rotlicht": "lounge_t2a",
@@ -75,7 +75,7 @@ json_dict = {
     "action": action,
 }
 
-json_dict[foo] = name
-#print(json_dict)
+json_dict[foo] = name.strip()
+print(json_dict)
 r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
 r.raise_for_status()
