@@ -30,3 +30,4 @@ Use presets
 
 ## TODO
 list of all devices
+Help page
