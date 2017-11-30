@@ -4,6 +4,10 @@
 
 For bug reports or enhancements, please open an [issue](https://github.com/A2nkF/dorfctl/issues) here.
 
+##Installation
+sudo pip install -r requrements.txt 
+
+
 ## Usage
 
 `./dorfctl.py [enable|disable|toggle|do] <device>`
