@@ -2,7 +2,7 @@
 
 `./dorfctl.py [enable|disable|toggle|do] <device>`
 
-Use 'do' for shutdown and unshutdown
+Use 'do' for shutdown and wakeup
 
 
 # Examples
@@ -14,7 +14,7 @@ Enable something
 
 Shutdown
 `./dorfctl.py do shutdown`
-`./dorfctl.py do unshutdown`
+`./dorfctl.py do wakeup`
 
 Use presets
 `./dorfctl.py Lounge hell`
