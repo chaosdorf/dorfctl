@@ -4,8 +4,8 @@
 
 For bug reports or enhancements, please open an [issue](https://github.com/A2nkF/dorfctl/issues) here.
 
-##Installation
-sudo pip install -r requrements.txt 
+## Installation
+sudo pip install -r requrements.txt
 
 
 ## Usage
