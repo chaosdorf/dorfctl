@@ -34,6 +34,6 @@ Use presets
 `./dorfctl.py Lounge hell`
 
 ## TODO
-list of all devices
+List of all devices
 
 Help page
