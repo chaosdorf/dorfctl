@@ -1,11 +1,17 @@
-# Usage
+# Dorfctl - A CLI for dorfmap
+
+## Bugs and enhancements
+
+For bug reports or enhancements, please open an [issue](https://github.com/A2nkF/dorfctl/issues) here.
+
+## Usage
 
 `./dorfctl.py [enable|disable|toggle|do] <device>`
 
 Use 'do' for shutdown and wakeup
 
 
-# Examples
+## Examples
 Enable something
 
 `./dorfctl.py enable regal1`
@@ -22,5 +28,5 @@ Use presets
 
 `./dorfctl.py Lounge hell`
 
-# TODO
+## TODO
 list of all devices
