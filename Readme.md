@@ -13,7 +13,9 @@ Enable something
 `./dorfctl.py enable tische`
 
 Shutdown
+
 `./dorfctl.py do shutdown`
+
 `./dorfctl.py do wakeup`
 
 Use presets
