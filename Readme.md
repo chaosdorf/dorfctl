@@ -19,6 +19,7 @@ Shutdown
 `./dorfctl.py do wakeup`
 
 Use presets
+
 `./dorfctl.py Lounge hell`
 
 # TODO
