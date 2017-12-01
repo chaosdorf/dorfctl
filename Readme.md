@@ -6,7 +6,7 @@ For bug reports or enhancements, please open an [issue](https://github.com/A2nkF
 
 ## Installation
 
-`sudo pip install -r requrements.txt`
+`sudo pip install -r requirements.txt`
 
 
 ## Usage
@@ -17,6 +17,7 @@ Use 'do' for shutdown and wakeup
 
 
 ## Examples
+
 Enable something
 
 `./dorfctl.py enable regal1`
@@ -34,6 +35,7 @@ Use presets
 `./dorfctl.py Lounge hell`
 
 ## TODO
+
 List of all devices
 
 Help page
