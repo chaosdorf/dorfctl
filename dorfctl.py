@@ -4,20 +4,37 @@ import requests
 import json
 import sys
 import argparse
+import tabulate
 
-parser = argparse.ArgumentParser( usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]' ,   description='test')
-parser.add_argument('command', help="Specify what you want to do")
-parser.add_argument('target', help="Specify the target")
+parser = argparse.ArgumentParser( usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]',
+    formatter_class = argparse.RawDescriptionHelpFormatter,
+    description="""Examples:
+
+    Enable something
+
+    ./dorfctl.py enable regal1
+
+    ./dorfctl.py enable tische
+
+    Shutdown
+
+    ./dorfctl.py do shutdown
+
+    ./dorfctl.py do wakeup
+
+    Use presets
+
+    ./dorfctl.py Lounge hell
+""")
+parser.add_argument('command', help="Specify what you want to do.")
+parser.add_argument('target', help="Specify the target.")
+
 
 
 args = parser.parse_args()
 
 command = args.command
 target = args.target
-
-#command = sys.argv[1]
-#target = sys.argv[2]
-#print(sys.argv)
 
 command_dict = {
     "enable": "on",
@@ -81,7 +98,6 @@ if (command in command_dict):
 else:
     name = ' '.join(sys.argv[1:])
 
-#print(trans_dict[user_input])
 json_dict = {
     "action": action,
 }
