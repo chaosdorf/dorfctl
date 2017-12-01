@@ -6,12 +6,12 @@ For bug reports or enhancements, please open an [issue](https://github.com/A2nkF
 
 ## Installation
 
-`sudo pip install -r requirements.txt`
+`sudo pip3 install -r requirements.txt`
 
 
 ## Usage
 
-`./dorfctl.py [enable|disable|toggle|do] <device>`
+`./dorfctl.py [enable|disable|toggle|do] <device> [-h]`
 
 Use 'do' for shutdown and wakeup
 

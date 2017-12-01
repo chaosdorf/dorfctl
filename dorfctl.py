@@ -3,12 +3,23 @@
 import requests
 import json
 import sys
+import argparse
 
-status = sys.argv[1]
-device = sys.argv[2]
+parser = argparse.ArgumentParser( usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]' ,   description='test')
+parser.add_argument('command', help="Specify what you want to do")
+parser.add_argument('target', help="Specify the target")
+
+
+args = parser.parse_args()
+
+command = args.command
+target = args.target
+
+#command = sys.argv[1]
+#target = sys.argv[2]
 #print(sys.argv)
 
-status_dict = {
+command_dict = {
     "enable": "on",
     "disable": "off",
     "toggle": "toggle",
@@ -56,10 +67,10 @@ trans_dict = {
 action = "preset"
 foo = "preset"
 
-if (status in status_dict):
-    target = trans_dict[device]
+if (command in command_dict):
+    target = trans_dict[target]
     parts = target.split(':')
-    action = status_dict[status]
+    action = command_dict[command]
     if (len(parts) == 1):
         foo = 'device'
         name = parts[0]
