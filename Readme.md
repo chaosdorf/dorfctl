@@ -37,5 +37,3 @@ Use presets
 ## TODO
 
 List of all devices
-
-Help page
