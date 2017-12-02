@@ -6,7 +6,8 @@ import sys
 import argparse
 import tabulate
 
-parser = argparse.ArgumentParser( usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]',
+parser = argparse.ArgumentParser(
+    usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]',
     formatter_class = argparse.RawDescriptionHelpFormatter,
     description="""Examples:
 
@@ -25,12 +26,10 @@ parser = argparse.ArgumentParser( usage='./%(prog)s [enable|disable|toggle|do] <
     Use presets
 
     ./dorfctl.py Lounge hell
-""")
+    """
+)
 parser.add_argument('command', help="Specify what you want to do.")
 parser.add_argument('target', help="Specify the target.")
-
-
-
 args = parser.parse_args()
 
 command = args.command
