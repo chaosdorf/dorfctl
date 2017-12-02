@@ -60,7 +60,7 @@ trans_dict = {
     "treppe": "treppe_w",
     "garderobe": "treppe_garderobe",
     "treppe_bild": "treppe_bild",
-    "roere": "loung_roere",
+    "roere": "lounge_roere",
     "blau": "roere_blau",
     "spiegelsäule": "hackcenter_3spot",
     "hackcenter_blau": "hackcenter_blau",
@@ -77,6 +77,8 @@ trans_dict = {
     "monitore rechts": "hackcenter_psu2",
     "tische": "tischerechts",
     "usb_charger": "ubercharger",
+    "logo": "logo",
+    "ossendorf": "hackcenter_ws2812b"
 
 }
 
