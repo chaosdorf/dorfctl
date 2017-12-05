@@ -28,9 +28,11 @@ parser = argparse.ArgumentParser(
     ./dorfctl.py Lounge hell
     """
 )
+#parser.add_argument('-l', help="Display possible targets")
 parser.add_argument('command', help="Specify what you want to do.")
 parser.add_argument('target', help="Specify the target.")
 args = parser.parse_args()
+
 
 command = args.command
 target = args.target
@@ -107,3 +109,4 @@ json_dict[foo] = name.strip()
 print(json_dict)
 r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
 r.raise_for_status()
+#print(trans_dict[key])
