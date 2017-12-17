@@ -34,6 +34,50 @@ Use presets
 
 `./dorfctl.py Lounge hell`
 
+## Targets
+
+-----------------------------------------
+List of targets:
+
+    Shortcuts:
+        shutdown
+        wakeup
+        amps
+
+    Presets:
+        hackcenter_weiss
+        hackcenter_blau
+
+    Devices:
+        hackcenter
+        rotlicht
+        lounge
+        regal1
+        regal2
+        regal3
+        regal4
+        regal5
+        regal6
+        regal7
+        regal8
+        treppe
+        garderobe
+        treppe_bild
+        roere
+        blau
+        spiegelsäule
+        putzlicht
+        amp0
+        amp1
+        amp2
+        amp3
+        monitore links
+        monitore rechts
+        tische
+        usb_charger
+        logo
+        ossendorf
+------------------------------------------
 ## TODO
 
 List of all devices
