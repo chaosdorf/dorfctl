@@ -65,7 +65,7 @@ List of targets:
         amp3
         monitore links
         monitore rechts
-        tische
+        screen
         usb_charger
         logo
         ossendorf
@@ -121,7 +121,7 @@ trans_dict = {
     "amp3": "amp3",
     "monitore links": "hackcenter_psu1",
     "monitore rechts": "hackcenter_psu2",
-    "tische": "tischerechts",
+    "screen": "tischerechts",
     "usb_charger": "ubercharger",
     "logo": "logo",
     "ossendorf": "hackcenter_ws2812b"
@@ -142,6 +142,7 @@ if (command in command_dict):
         name = parts[1] + ' ' + action
         action = parts[0]
         foo = action
+
 else:
     name = ' '.join(sys.argv[1:])
 

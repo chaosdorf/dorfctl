@@ -73,7 +73,7 @@ List of targets:
         amp3
         monitore links
         monitore rechts
-        tische
+        screen
         usb_charger
         logo
         ossendorf
