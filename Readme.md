@@ -13,8 +13,8 @@ For bug reports or enhancements, please open an [issue](https://github.com/A2nkF
 
 `./dorfctl.py [enable|disable|toggle|do] <device> [-h]`
 
-Use 'do' for shutdown and wakeup
-
+Use 'do' for shutdown and wakeup.
+You can't toggle amp's yet.
 
 ## Examples
 
