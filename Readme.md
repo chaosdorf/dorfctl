@@ -80,4 +80,4 @@ List of targets:
 ------------------------------------------
 ## TODO
 
-List of all devices
+You can't toggle amp's yet.
