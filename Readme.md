@@ -6,6 +6,12 @@ For bug reports or enhancements, please open an [issue](https://github.com/A2nkF
 
 ## Installation
 
+Clone this repository.
+
+`git clone https://github.com/chaosdorf/dorfctl.git && cd dorfctl`
+
+Install the requirements.
+
 `sudo pip3 install -r requirements.txt`
 
 
