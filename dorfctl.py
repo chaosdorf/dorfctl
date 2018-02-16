@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-
 import requests
 import json
 import sys
 import argparse
 import tabulate
+from bidict import bidict
 
 parser = argparse.ArgumentParser(
     usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]',
@@ -27,6 +27,10 @@ parser = argparse.ArgumentParser(
     Use presets
 
     ./dorfctl.py Lounge hell
+
+    Check the status
+
+    ./dorfctl.py status rotlicht
 
 -----------------------------------------
 List of targets:
@@ -82,13 +86,20 @@ command = args.command
 target = args.target
 
 command_dict = {
+    "status":"status",
     "enable": "on",
     "disable": "off",
     "toggle": "toggle",
     'do': ''
 }
 
-trans_dict = {
+status_dict = {
+    "1":" is on",
+    "0":" is off",
+    "-1":" does not exist"
+}
+
+trans_dict = bidict({
     "shutdown": "shortcut:shutdown",
     "wakeup": "shortcut:unshutdown",
     "amps": "shortcut:amps",
@@ -113,11 +124,8 @@ trans_dict = {
     "hackcenter_weiss": "hackcenter_weiss",
     "putzlicht": "hackcenter_roehre",
     "amp0": "amp0",
-    "amp0": "amp0",
     "amp1": "amp1",
     "amp2": "amp2",
-    "amp2": "amp2",
-    "amp3": "amp3",
     "amp3": "amp3",
     "monitore links": "hackcenter_psu1",
     "monitore rechts": "hackcenter_psu2",
@@ -126,7 +134,7 @@ trans_dict = {
     "logo": "logo",
     "ossendorf": "hackcenter_ws2812b"
 
-}
+})
 
 action = "preset"
 foo = "preset"
@@ -149,8 +157,16 @@ else:
 json_dict = {
     "action": action,
 }
-
 json_dict[foo] = name.strip()
-print(json_dict)
-r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
-r.raise_for_status()
+
+if(command == "status"):
+    foo = target
+    r = requests.get('http://dorfmap.chaosdorf.space/get/' + foo)
+    bar = str(r.content)
+    list(bar)
+    print(trans_dict.inv[target] + status_dict[bar[2]])
+
+else:
+    r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
+    print(json_dict)
+    r.raise_for_status()
