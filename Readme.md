@@ -80,4 +80,6 @@ List of targets:
 ------------------------------------------
 ## TODO
 
-You can't toggle amp's yet.
+-Add an option to resquest the status of a device
+-You can't toggle amp's yet.
+
