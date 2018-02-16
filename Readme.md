@@ -42,7 +42,6 @@ Use presets
 
 ## Targets
 
------------------------------------------
 List of targets:
 
     Shortcuts:
@@ -83,7 +82,7 @@ List of targets:
         usb_charger
         logo
         ossendorf
-------------------------------------------
+
 ## TODO
 
 -Add an option to resquest the status of a device
