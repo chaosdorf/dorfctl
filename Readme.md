@@ -40,6 +40,10 @@ Use presets
 
 `./dorfctl.py Lounge hell`
 
+Check the status
+
+` ./dorfctl.py status rotlicht`
+
 ## Targets
 
 List of targets:
@@ -52,6 +56,8 @@ List of targets:
     Presets:
         hackcenter_weiss
         hackcenter_blau
+        Lounge hell
+        Lounge dunkel
 
     Devices:
         hackcenter
@@ -85,7 +91,8 @@ List of targets:
 
 ## TODO
 
--Add an option to resquest the status of a device
+-Add an option to get the door status
+
+-An option to know whether we are in shutdown
 
 -You can't toggle amp's yet.
-
