@@ -76,7 +76,6 @@ List of targets:
 ------------------------------------------
     """
 )
-#parser.add_argument('-l', help="Display possible targets")
 parser.add_argument('command', help="Specify what you want to do.")
 parser.add_argument('target', help="Specify the target.")
 args = parser.parse_args()
