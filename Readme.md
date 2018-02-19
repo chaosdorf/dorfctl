@@ -17,7 +17,7 @@ Install the requirements.
 
 ## Usage
 
-`./dorfctl.py [enable|disable|toggle|do] <device> [-h]`
+`./dorfctl.py [enable|disable|toggle|do|status] <device> [-h]`
 
 Use 'do' for shutdown and wakeup.
 You can't toggle amp's yet.

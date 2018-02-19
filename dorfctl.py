@@ -8,7 +8,7 @@ import tabulate
 from bidict import bidict
 
 parser = argparse.ArgumentParser(
-    usage='./%(prog)s [enable|disable|toggle|do] <target> [-h]',
+    usage='./%(prog)s [enable|disable|toggle|do|status] <target> [-h]',
     formatter_class = argparse.RawDescriptionHelpFormatter,
     description="""Examples:
 
