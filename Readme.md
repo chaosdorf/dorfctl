@@ -94,3 +94,5 @@ List of targets:
 -An option to know whether we are in shutdown
 
 -You can't toggle amp's yet.
+
+-An option to get information about the mpd
