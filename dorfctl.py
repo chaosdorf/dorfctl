@@ -32,7 +32,7 @@ parser = argparse.ArgumentParser(
 
     ./dorfctl.py status rotlicht
 
------------------------------------------
+------------------------------------------
 List of targets:
 
     Shortcuts:
@@ -95,7 +95,9 @@ command_dict = {
 status_dict = {
     "1":" is on",
     "0":" is off",
-    "-1":" does not exist"
+    "-1":" does not exist",
+    True: "The door status is public",
+    False: "The door status is private",
 }
 
 trans_dict = bidict({
@@ -131,8 +133,8 @@ trans_dict = bidict({
     "screen": "tischerechts",
     "usb_charger": "ubercharger",
     "logo": "logo",
-    "ossendorf": "hackcenter_ws2812b"
-
+    "ossendorf": "hackcenter_ws2812b",
+    "door": "door"
 })
 
 action = "preset"
@@ -159,13 +161,20 @@ json_dict = {
 json_dict[foo] = name.strip()
 
 if(command == "status"):
-    foo = target
-    r = requests.get('http://dorfmap.chaosdorf.space/get/' + foo)
-    bar = str(r.content)
-    list(bar)
-    print(trans_dict.inv[target] + status_dict[bar[2]])
+    if(target == "door"):
+        r = requests.get('http://dorfmap.chaosdorf.space/space_api.json')
+        jsonToPython = json.loads(r.content)
+        state = jsonToPython['state']["open"]
+        print(status_dict[state])
+
+    else:
+        foo = target
+        r = requests.get('http://dorfmap.chaosdorf.space/get/' + foo)
+        bar = str(r.content)
+        list(bar)
+        print(trans_dict.inv[target] + status_dict[bar[2]])
 
 else:
-    r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict )
+    r = requests.post('http://dorfmap.chaosdorf.space:80/action', json = json_dict)
     print(json_dict)
     r.raise_for_status()
