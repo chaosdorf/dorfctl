@@ -91,8 +91,6 @@ List of targets:
 
 ## TODO
 
--Add an option to get the door status
-
 -An option to know whether we are in shutdown
 
 -You can't toggle amp's yet.
