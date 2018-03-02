@@ -14,6 +14,9 @@ Install the requirements.
 
 `sudo pip3 install -r requirements.txt`
 
+Make it executable
+
+`chmod +x dorfctl.py`
 
 ## Usage
 
