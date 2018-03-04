@@ -99,3 +99,7 @@ List of targets:
 -You can't toggle amp's yet.
 
 -An option to get information about the mpd
+
+-Add some kind of tab completion maybe even with a man page
+
+-Add more devices 
